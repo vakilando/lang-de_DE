@@ -74,10 +74,10 @@ Governor=Regler
 :tips_tweaks_general_plug:
 > Some General Recommendations:
 >
-> + Use of a static IP address can help in certain cases.  NFS shares are referenced by IP address.  Be sure you reserve the IP address on your router, or set a very high IP address to prevent conflicts.
-> + Use of Jumbo Frames is discouraged.  Jumbo Frames have been known to cause issues with some Dockers.
-> + Don't set vm.dirty.ratio above 20% unless you have a UPS backup for your Unraid.  You may lose data that has not been written to disk on a power failure.
-> + A value of vm.dirty_background_ratio over 1/2 of vm.dirty_ratio is not recommended unless using single digits for both values.
+> + Die Verwendung einer statischen IP-Adresse kann in einigen Fällen hilfreich sein. NFS-Freigaben werden durch IP-Adressen referenziert. Stellen Sie sicher, dass die verwendete IP-Adresse hierfür auf dem Router/DHCP-Server reserviert ist, oder verwenden Sie eine hohe IP-Adresse (am Ende des Bereichs) um IP-Adresse-Konflikte zu vermeiden.
+> + Die Verwendung von Jumbo Frames wird nicht empfohlen.  Jumbo Frames sind bekannt dafür bei einigen Docker-Containern Probleme zu verursachen.
+> + Setzen Sie nicht vm.dirty.ratio über 20% es sei denn Sie haben eine USV für den Unraid Server.  Im Falle eines Stromausfalls könnten Sie Daten verlieren, die noch nicht auf die Festplatten geschrieben wurden.
+> + Es wird nicht empfohlen, dass der Wert von vm.dirty_background_ratio 1/2 mal größer ist als der Wert von vm.dirty_ratio, es sei denn beide Werte sind einstellig.
 :end
 
 :tips_tweaks_nic_flow_control_plug:
